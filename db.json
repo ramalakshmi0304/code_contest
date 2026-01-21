@@ -1,4 +1,48 @@
 {
-  "products": [],
-  "orders": []
+  "products": [
+    {
+      "id": 1769006503046,
+      "name": "Mobile",
+      "price": 20000,
+      "stock": 12
+    },
+    {
+      "id": 1769006531931,
+      "name": "lapto",
+      "price": 50000,
+      "stock": 16
+    },
+    {
+      "id": 1769006545907,
+      "name": "keyboard",
+      "price": 50000,
+      "stock": 25
+    }
+  ],
+  "orders": [
+    {
+      "id": 1769006770988,
+      "productId": 1769006503046,
+      "quantity": 3,
+      "totalAmount": 60000,
+      "status": "placed",
+      "createdAt": "2026-01-21"
+    },
+    {
+      "id": 1769006792748,
+      "productId": 1769006531931,
+      "quantity": 4,
+      "totalAmount": 200000,
+      "status": "placed",
+      "createdAt": "2026-01-21"
+    },
+    {
+      "id": 1769006804592,
+      "productId": 1769006545907,
+      "quantity": 2,
+      "totalAmount": 100000,
+      "status": "cancelled",
+      "createdAt": "2026-01-21"
+    }
+  ]
 }

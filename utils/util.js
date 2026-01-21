@@ -1,11 +1,13 @@
-import express from "express"
-import fs, { readFileSync } from "fs";
+import { readFileSync, writeFileSync } from "fs";
 
-const readData = ()=>{
-    const data = readFileSync ("/db.json", "util-8");
-    return JSON.parse(data, null,2)
-}
 
-const writeData =(data)=>{
-    writeFileSync("/db.json", JSON.stringify(data))
-}
+const readData = () => {
+    const data = readFileSync("db.json", "utf-8");
+    return JSON.parse(data);
+};
+
+const writeData = (data) => {
+    writeFileSync("db.json", JSON.stringify(data, null, 2));
+};
+
+export { readData, writeData };
